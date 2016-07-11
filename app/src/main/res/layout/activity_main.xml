@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic"
+    tools:context="com.example.zyh.myapplication.WelcomeActivity">
+
+    <com.example.zyh.myapplication.view.MySlidingMenu
+        android:id="@+id/slid_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:paddingRight="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/item_menu" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/main_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@mipmap/navigationbar_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <RadioButton
+                        android:id="@+id/get_movices"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/rb_moive_selector"
+                        android:textSize="1sp" />
+
+                    <RadioButton
+                        android:id="@+id/get_texts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/rb_article_selector"
+                        android:textSize="1sp" />
+
+                    <RadioButton
+                        android:id="@+id/get_pictures"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/rb_picture_selector"
+                        android:textSize="1sp" />
+
+                    <RadioButton
+                        android:id="@+id/get_users"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/rb_personal_selector"
+                        android:textSize="1sp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/top_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_above="@id/main_rg"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/id_logo_top"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:background="@mipmap/logo_critic" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="6"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/id_data2_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/date_4" />
+
+                        <ImageView
+                            android:id="@+id/id_week_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/id_data2_top"
+                            android:src="@mipmap/week_6" />
+
+                        <ImageView
+                            android:id="@+id/id_month_divide_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/id_week_top"
+                            android:layout_alignStart="@+id/id_week_top"
+                            android:layout_below="@+id/id_week_top"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginStart="7dp"
+                            android:src="@mipmap/month_divide" />
+
+                        <ImageView
+                            android:id="@+id/id_months_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/id_week_top"
+                            android:layout_toEndOf="@+id/id_month_divide_top"
+                            android:layout_toRightOf="@+id/id_month_divide_top"
+                            android:src="@mipmap/month_11" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/img_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:onClick="onClick"
+                    android:src="@mipmap/icon_favorite_tip"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/top_style"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.zyh.myapplication.view.MySlidingMenu>
+
+
+</RelativeLayout>

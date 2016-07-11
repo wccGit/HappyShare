@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/id_article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="把你忘在了朋友圈里"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/id_article_author"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/id_article_title"
+            android:layout_marginTop="20dp"
+            android:text="作者：痒痒痒"
+            android:textColor="#aaa" />
+
+        <TextView
+            android:id="@+id/text_line1"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/id_article_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/id_article_author"
+            android:background="#aaa" />
+
+        <TextView
+            android:id="@+id/id_article_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_article_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/text_line1"
+            android:text="阅读量：3162"
+            android:textColor="#aaa" />
+
+        <ImageView
+            android:id="@+id/text_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_article_times"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/id_article_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_image"
+            android:layout_marginTop="10dp"
+            android:background="#F7F7F7"
+            android:padding="20dp"
+            android:text="平淡，却湿了眼眶"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/id_article_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_article_summary"
+            android:layout_marginTop="20dp"
+            android:text="2011年11月11日，晴。从秦园路到西城酒吧有三公里，路上有三个红绿灯街口，我一个人走，" />
+
+        <TextView
+            android:id="@+id/text_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/id_article_text"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/line" />
+
+        <TextView
+            android:id="@+id/id_article_author2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_line2"
+            android:layout_marginTop="10dp"
+            android:text="痒痒痒"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_article_authorbrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_article_author2"
+            android:layout_marginTop="15dp"
+            android:text="作者，痒痒痒，强迫症，微博：蒲末释，自由撰稿人。"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>
