@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/pic"
+    android:background="@mipmap/bgbg"
     tools:context="com.example.zyh.myapplication.WelcomeActivity">
 
     <com.example.zyh.myapplication.view.MySlidingMenu
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
-        app:paddingRight="200dp">
+        app:paddingRight="180dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -24,7 +24,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#C7EDCC">
 
                 <RadioGroup
                     android:id="@+id/main_rg"

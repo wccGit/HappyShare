@@ -33,8 +33,8 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     private UserFragment userFrag;
     private MySlidingMenu mySlidingMenu;
     private LinearLayout linear;
-    private ImageView img_1, img_2, img_3, img_4, img_5, img_6;
-    private TextView tv_1, tv_2, tv_3, tv_4, tv_5, tv_6;
+    private ImageView img_2, img_3, img_4, img_5, img_6;
+    private TextView tv_2, tv_3, tv_4, tv_5, tv_6;
     private boolean flag = true;
 
     @Override
@@ -84,13 +84,13 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     private void init() {
         mySlidingMenu = (MySlidingMenu) findViewById(R.id.slid_id);
         linear = (LinearLayout) findViewById(R.id.Linear_menu_id);
-        img_1 = (ImageView) findViewById(R.id.img_1);
+//        img_1 = (ImageView) findViewById(R.id.img_1);
         img_2 = (ImageView) findViewById(R.id.img_2);
         img_3 = (ImageView) findViewById(R.id.img_3);
         img_4 = (ImageView) findViewById(R.id.img_4);
         img_5 = (ImageView) findViewById(R.id.img_5);
         img_6 = (ImageView) findViewById(R.id.img_6);
-        tv_1 = (TextView) findViewById(R.id.tv_1);
+//        tv_1 = (TextView) findViewById(R.id.tv_1);
         tv_2 = (TextView) findViewById(R.id.tv_2);
         tv_3 = (TextView) findViewById(R.id.tv_3);
         tv_4 = (TextView) findViewById(R.id.tv_4);
@@ -101,7 +101,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
     public void onClick(View view) {
         mySlidingMenu.toggle();
         if (flag) {
-            img_1.setVisibility(View.GONE);
+//            img_1.setVisibility(View.GONE);
             img_2.setVisibility(View.GONE);
             img_3.setVisibility(View.GONE);
             img_4.setVisibility(View.GONE);
@@ -109,7 +109,7 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
             img_6.setVisibility(View.GONE);
             flag = false;
         } else {
-            img_1.setVisibility(View.VISIBLE);
+//            img_1.setVisibility(View.VISIBLE);
             img_2.setVisibility(View.VISIBLE);
             img_3.setVisibility(View.VISIBLE);
             img_4.setVisibility(View.VISIBLE);
