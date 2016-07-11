@@ -17,23 +17,29 @@
             android:id="@+id/id_whiteLine_user"
             android:layout_width="80dp"
             android:layout_height="80dp"
+
             android:layout_centerInParent="true"
             android:src="@mipmap/avator_whiteline" />
 
         <ImageView
+
             android:id="@+id/id_login_user"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_centerInParent="true"
             android:background="@mipmap/avator_login" />
 
         <TextView
             android:id="@+id/id_user_font"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
             android:layout_below="@id/id_login_user"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
+
             android:paddingTop="20dp"
             android:text="点击使用QQ登录"
             android:textColor="#fff" />
