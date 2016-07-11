@@ -10,9 +10,4 @@ public class Sygesst extends FragmentActivity {
         setContentView(R.layout.sugesst);
     }
 
-//    @Override
-//    public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
-//        View view = getLayoutInflater().inflate(R.layout.aboutten,null);
-//        return view ;
-//    }
 }
