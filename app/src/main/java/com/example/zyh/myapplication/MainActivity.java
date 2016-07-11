@@ -68,10 +68,10 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
 
-        transaction.add(R.id.container, movieFrag);
-        transaction.add(R.id.container, articleFrag);
-        transaction.add(R.id.container, pictureFrag);
-        transaction.add(R.id.container, userFrag);
+        transaction.add(R.id.ll_container_id, movieFrag);
+        transaction.add(R.id.ll_container_id, articleFrag);
+        transaction.add(R.id.ll_container_id, pictureFrag);
+        transaction.add(R.id.ll_container_id, userFrag);
 
         transaction.hide(articleFrag);
         transaction.hide(pictureFrag);
