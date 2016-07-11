@@ -21,7 +21,7 @@ import com.nineoldandroids.view.ViewHelper;
 
 public class MySlidingMenu extends HorizontalScrollView {
     private LinearLayout mLinearLayout;
-    private ViewGroup mMenu, mContent;//菜单，内容区域
+    private ViewGroup mMenu, mContent;//菜单 ，内容区域
     private int mScreenwidth, mpaddingRight, mMenuWidth;//屏幕宽度，菜单距离屏幕右侧边距
     private boolean once, isOpen;//是否第一次加载，是否是打开状态
 
@@ -57,6 +57,7 @@ public class MySlidingMenu extends HorizontalScrollView {
         wm.getDefaultDisplay().getMetrics(displayMetrics);
 
         mScreenwidth = displayMetrics.widthPixels;//获取屏幕宽度
+//        mpaddingRight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, context.getResources().getDisplayMetrics());
     }
 
     public MySlidingMenu(Context context, AttributeSet attrs) {
@@ -111,7 +112,8 @@ public class MySlidingMenu extends HorizontalScrollView {
                     smoothScrollTo(0, 0);//缓慢滑动到目标位置
                     isOpen = true;
                 }
-                return true;
+                return false;
+
         }
         return super.onTouchEvent(ev);
     }
